@@ -34,7 +34,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 publish {
-    userOrg = 'fightwithu'             // Binary用户名
+    userOrg = 'junlee'             // Binary用户名
     repoName = 'CircleProgress'          // Binary上的刚才新建的仓库名（Repository）
     groupId = 'com.xlink'        // 依赖名compile 'x:y:z'中的包名x
     artifactId = 'CircleProgress'        // 依赖名compile 'x:y:z'中的项目名y
