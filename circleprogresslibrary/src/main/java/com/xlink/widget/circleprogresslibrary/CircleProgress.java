@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -267,6 +268,9 @@ public class CircleProgress extends View {
         }
 
         drawScale(canvas);
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+            requestLayout();
+        }
     }
 
     //画刻度
